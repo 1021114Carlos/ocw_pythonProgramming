@@ -5,16 +5,6 @@ def search(keyword) :
          self.word = word
          self.synonyms = synonyms
 
-   #e1 = Entry("dog", ["doggie", "puppy"])
-   #e2 = Entry("cat", ["kitty"])
-
-   #Thesaurus = [e1, e2]
-
-   #doc1 = ["this", "is", "a", "single", "document"]
-   #doc2 = ["here", "is", "another", "document"]
-
-   #Corpus = [doc1, doc2]
-
    All_words = []
    All_words.append(keyword)
    for Entry in Thesaurus:

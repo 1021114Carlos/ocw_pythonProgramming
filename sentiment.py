@@ -15,21 +15,20 @@ def search(keyword) :
 
    #Corpus = [doc1, doc2]
 
-   final = []
-   All_words = [keyword]
+   All_words = []
+   All_words.append(keyword)
    for Entry in Thesaurus:
       if keyword == Entry.word:
-         for word in Entry.synonyms:
-            All_words.append(word)
-   for keyword in All_words:
+         for synonym in Entry.synonyms:
+            All_words.append(synonym)
+   word_syn
+   for word in All_words:
       count = 0
       for document in Corpus:
-         for word in document:
-               if keyword == word:
-                  count += 1
-                  result = (keyword, count)
-      final.append(result)
-   return final
+         count += 1
+           
+      word_syn.append(word, count)
+   return word_syn
 
 input = "happy"
 output = search(input) # invoke the method using a test input

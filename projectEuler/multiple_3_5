@@ -1,0 +1,10 @@
+#find the sum of all the multiples of 3 and 5 below 1k
+
+number = range(1+1000)
+
+total = 0
+for unit in number:
+    if unit > 2 and unit < 1000:
+        if unit%3 == 0 or unit%5==0:
+            total+= unit
+print(total)

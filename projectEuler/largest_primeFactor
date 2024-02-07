@@ -1,0 +1,22 @@
+#finding best technique for prime factorization
+
+def largestPrimeFactor(divisor, dividend):
+    factor = 1
+    largePrime = 2
+    equals = False
+    prime = divisor
+    number = dividend
+    while(not equals):
+        if(dividend%divisor == 0):
+            prime = divisor
+            factor*=divisor
+            dividend = dividend//divisor
+            if(prime >= largePrime):
+                largePrime = prime
+        divisor+=1
+        if(factor == number):
+            equals = True
+            print("the largest prime factor for ", str(number) + " is", str(largePrime))
+        #if(prime < )
+        
+largestPrimeFactor(2, 131)

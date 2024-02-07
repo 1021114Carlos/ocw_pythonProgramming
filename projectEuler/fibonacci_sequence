@@ -1,0 +1,21 @@
+#find the fibonacci's sequence whose value does not exceed 4M. Find the even number-terms and add them up.
+#the first 10 fibonacci terms in the sequence are: 0 and 1
+#0+1 = 1, 1+1=2, 2+1=3, 3+2=5, 5+3=8, 8+5=13, 13+8=21, 21+13=34, 34+21=55, 55+34=89
+
+fibSequence = 0
+evenNumber = 0
+pastTerm = 0
+newTerm = 1
+statement = True
+while(statement):
+    fibSequence = pastTerm + newTerm
+    pastTerm = newTerm
+    print(fibSequence)
+    newTerm = fibSequence
+    if(newTerm > 4000000):
+        statement = False
+    if(fibSequence%2 == 0):
+        evenNumber+=fibSequence
+    
+print("the sum of all the even numbers is", evenNumber)
+#print("number of terms", fibTerms)

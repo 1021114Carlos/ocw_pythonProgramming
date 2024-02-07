@@ -1,0 +1,21 @@
+def fact(n):
+    
+    """ n is an int >= 0 """
+    """ Writing a recursive algorithm
+        to understand more about
+        recursive process
+    """
+    
+    if n == 1: return n
+    else: return fact(n-1)*n
+k = fact(5)
+print("The factorial number of 5 is", k)
+
+# The recursive process here is as follows:
+# assuming n is 5, since n*(n-1)*(n-2)*(n-3)*(5-4) is equivalent to
+# 5*(5-1)*(5-2)*(5-3)*(5-4) which is equivalent to 5*4*3*2*1 then 
+# we observe that the argument inside the function is subtracted by one
+# everytime the base case is not met.
+# Once the base case is met, the argument inside the function initiates 
+# the recursive process and multiplies the result of the argument 
+# inside the function agains the previous result.

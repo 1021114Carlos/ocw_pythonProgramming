@@ -1,0 +1,9 @@
+# MadLibs
+# In this game, you will request string input from the user (adjectives, nouns, verbs, etc.) and then you will use that 
+# input to generate and print out a MadLibs story. Make sure to format the string input so that it looks nice in your story.
+
+import re
+
+story = "Me: What’s the Wi-Fi password? Bartender: You need to buy a drink first. Me: OK, I’ll have a Coke. Bartender: Three dollars. Me: There you go. So what’s the Wi‑Fi password? Bartender: “You need to buy a drink first.” No spaces, all lowercase."
+
+speech_structure = random.choice(["adjectives", "noun", "verb", "adverb", "pronoun"])

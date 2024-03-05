@@ -13,3 +13,5 @@ while count < 10001:
   num += 1
 
 print(f"The 10001st prime number is: {num - 1}")
+
+# That number is 104743

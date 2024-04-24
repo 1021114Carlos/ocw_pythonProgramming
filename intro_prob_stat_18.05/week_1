@@ -1,0 +1,16 @@
+# a) count the number of ways to get exactly 3 heads in 10 flips of a coin.
+
+
+import math
+# n!/(n-k)!
+
+k = 3
+n = 10
+
+print(f"The permuation for the number of ways to get exactly 3 heads in 10 flips: {math.perm(n,k)}")
+print("\n")
+
+# b) for a fair coin, what is the probability of exacly 3 heads in 10 flips.
+# n!/k!(n-k)
+print(f'for a fair coin, the probability of exactly 3 heads is: {math.comb(n,k)}')
+

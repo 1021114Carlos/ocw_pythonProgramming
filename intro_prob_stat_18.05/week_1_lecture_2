@@ -37,3 +37,17 @@ import math
 
 # 50 zebras. 20 females (F), 25 have no stripes (NS). 
 # What is the range of possible values for p = P(F union NS)?
+
+# Function to calculate the size of the event "there are more heads than tails"
+# def size_more_heads(sample_space):
+#     count_more_heads = 0
+#     for outcome in sample_space:
+#         if outcome.count("H") > outcome.count("T"):
+#             count_more_heads += 1
+#     return count_more_heads
+
+# # Calculate the size of the event
+# event_size = size_more_heads(sample_space)
+
+# # Print the result
+# print("Size of the event 'there are more heads than tails':", event_size)
